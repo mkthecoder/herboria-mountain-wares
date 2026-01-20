@@ -10,7 +10,7 @@ const products = [
     id: 1,
     name: "Pure Himalayan Shilajit",
     category: "Shilajit",
-    price: 79.99,
+    price: 22500,
     image: shilajitImage,
     benefits: ["Energy & Vitality", "Mineral Rich", "Traditional Remedy"],
     badge: "Bestseller",
@@ -19,7 +19,7 @@ const products = [
     id: 2,
     name: "Mountain Green Tea",
     category: "Herbal Teas",
-    price: 24.99,
+    price: 7000,
     image: teaImage,
     benefits: ["Antioxidant Rich", "Calming", "Fresh Picked"],
     badge: null,
@@ -28,7 +28,7 @@ const products = [
     id: 3,
     name: "Herbal Wellness Collection",
     category: "Natural Remedies",
-    price: 54.99,
+    price: 15500,
     image: herbsImage,
     benefits: ["4 Premium Herbs", "Immunity Boost", "Gift Ready"],
     badge: "New",
@@ -100,7 +100,7 @@ export function FeaturedProducts() {
                   {/* Price & CTA */}
                   <div className="flex items-center justify-between pt-4 border-t border-border">
                     <span className="font-serif text-2xl font-semibold text-foreground">
-                      ${product.price}
+                      PKR {product.price.toLocaleString()}
                     </span>
                     <Button variant="default" size="sm" className="group-hover:bg-gold group-hover:text-gold-foreground transition-colors">
                       <ShoppingBag className="h-4 w-4 mr-2" />

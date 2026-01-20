@@ -84,9 +84,9 @@ const Contact = () => {
                   <div>
                     <h3 className="font-medium text-foreground mb-1">Location</h3>
                     <p className="text-muted-foreground text-sm">
-                      123 Wellness Way<br />
-                      Boulder, CO 80302<br />
-                      United States
+                      Zulfiqarabad, Jutial,<br />
+                      Gilgit-Baltistan,<br />
+                      Pakistan
                     </p>
                   </div>
                 </div>

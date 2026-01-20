@@ -20,7 +20,7 @@ const products = [
     id: 1,
     name: "Pure Himalayan Shilajit",
     category: "shilajit",
-    price: 79.99,
+    price: 22500,
     image: shilajitImage,
     benefits: ["Energy & Vitality", "Mineral Rich"],
     badge: "Bestseller",
@@ -29,7 +29,7 @@ const products = [
     id: 2,
     name: "Mountain Green Tea",
     category: "tea",
-    price: 24.99,
+    price: 7000,
     image: teaImage,
     benefits: ["Antioxidant Rich", "Calming"],
     badge: null,
@@ -38,7 +38,7 @@ const products = [
     id: 3,
     name: "Herbal Wellness Collection",
     category: "remedies",
-    price: 54.99,
+    price: 15500,
     image: herbsImage,
     benefits: ["4 Premium Herbs", "Immunity Boost"],
     badge: "New",
@@ -47,7 +47,7 @@ const products = [
     id: 4,
     name: "Gold Grade Shilajit",
     category: "shilajit",
-    price: 129.99,
+    price: 36500,
     image: shilajitImage,
     benefits: ["Premium Grade", "Maximum Potency"],
     badge: "Premium",
@@ -56,7 +56,7 @@ const products = [
     id: 5,
     name: "Himalayan Chamomile Blend",
     category: "tea",
-    price: 19.99,
+    price: 5500,
     image: teaImage,
     benefits: ["Sleep Support", "Relaxing"],
     badge: null,
@@ -65,7 +65,7 @@ const products = [
     id: 6,
     name: "Ashwagandha Extract",
     category: "remedies",
-    price: 34.99,
+    price: 9800,
     image: herbsImage,
     benefits: ["Stress Relief", "Adaptogenic"],
     badge: null,
@@ -215,7 +215,7 @@ const Products = () => {
                     {/* Price & CTA */}
                     <div className="flex items-center justify-between pt-4 border-t border-border">
                       <span className="font-serif text-2xl font-semibold text-foreground">
-                        ${product.price}
+                        PKR {product.price.toLocaleString()}
                       </span>
                       <Button variant="default" size="sm" className="group-hover:bg-gold group-hover:text-gold-foreground transition-colors">
                         <ShoppingBag className="h-4 w-4 mr-2" />

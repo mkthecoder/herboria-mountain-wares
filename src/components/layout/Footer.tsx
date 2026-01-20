@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { Instagram, Facebook, Twitter, Mail } from "lucide-react";
+import logo from "@/assets/logo.png";
 
 const footerLinks = {
   shop: [
@@ -37,9 +38,11 @@ export function Footer() {
           {/* Brand Column */}
           <div className="lg:col-span-2">
             <Link to="/" className="inline-block">
-              <span className="font-serif text-3xl font-semibold tracking-tight">
-                Herboria
-              </span>
+              <img 
+                src={logo} 
+                alt="Herboria" 
+                className="h-32 w-auto"
+              />
             </Link>
             <p className="mt-4 text-primary-foreground/80 max-w-sm leading-relaxed">
               Premium Himalayan herbs and natural remedies, sourced directly from 

@@ -24,7 +24,7 @@ const productData: Record<string, {
     id: 1,
     name: "Pure Himalayan Shilajit",
     category: "Shilajit",
-    price: 79.99,
+    price: 22500,
     image: shilajitImage,
     description: "Experience the ancient power of pure Himalayan Shilajit, carefully harvested from high-altitude rock formations above 16,000 feet. This mineral-rich resin has been used for centuries in Ayurvedic medicine to enhance energy, vitality, and overall wellness.",
     benefits: [
@@ -42,7 +42,7 @@ const productData: Record<string, {
     id: 2,
     name: "Mountain Green Tea",
     category: "Herbal Teas",
-    price: 24.99,
+    price: 7000,
     image: teaImage,
     description: "Hand-picked from organic tea gardens nestled in the Himalayan foothills, our Mountain Green Tea offers a delicate, refreshing taste with powerful antioxidant properties. Each leaf is carefully selected and minimally processed to preserve its natural goodness.",
     benefits: [
@@ -59,7 +59,7 @@ const productData: Record<string, {
     id: 3,
     name: "Herbal Wellness Collection",
     category: "Natural Remedies",
-    price: 54.99,
+    price: 15500,
     image: herbsImage,
     description: "A curated collection of four premium Himalayan herbs, each selected for their unique wellness benefits. This beautiful gift-ready set includes Ashwagandha, Tulsi, Brahmi, and Triphala—the foundation of any herbal wellness journey.",
     benefits: [
@@ -146,9 +146,9 @@ const ProductDetail = () => {
               {/* Price */}
               <div className="flex items-baseline gap-3 mb-6">
                 <span className="font-serif text-4xl font-semibold text-foreground">
-                  ${product.price}
+                  PKR {product.price.toLocaleString()}
                 </span>
-                <span className="text-sm text-muted-foreground">+ Free shipping over $50</span>
+                <span className="text-sm text-muted-foreground">+ Free shipping over PKR 5,000</span>
               </div>
 
               {/* Description */}
@@ -175,7 +175,7 @@ const ProductDetail = () => {
                 </div>
                 <Button variant="gold" size="lg" className="flex-1 sm:flex-none">
                   <ShoppingBag className="h-5 w-5 mr-2" />
-                  Add to Cart — ${(product.price * quantity).toFixed(2)}
+                  Add to Cart — PKR {(product.price * quantity).toLocaleString()}
                 </Button>
               </div>
 

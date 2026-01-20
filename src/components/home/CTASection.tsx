@@ -15,7 +15,7 @@ export function CTASection() {
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gold/10 border border-gold/20 mb-8">
             <Gift className="h-4 w-4 text-gold" />
             <span className="text-sm font-medium text-gold">
-              Free shipping on orders over $50
+              Free shipping on orders over PKR 5,000
             </span>
           </div>
 
